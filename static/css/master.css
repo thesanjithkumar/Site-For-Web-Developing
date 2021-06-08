@@ -82,16 +82,16 @@ ul li:hover:nth-child(1) a:after {
     linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
 }
 ul li:hover:nth-child(2) a {
-  background: linear-gradient(#db4437, transparent),
-    linear-gradient(200deg, #db4437, #4285f4, #db4437);
+  background: linear-gradient(#333, transparent),
+    linear-gradient(200deg, #f5f5f5, #333, #f5f5f5);
 }
 ul li:hover:nth-child(2) a:before {
-  background: linear-gradient(#db4437, transparent),
-    linear-gradient(200deg, #db4437, #4285f4, #db4437);
+  background: linear-gradient(#333, transparent),
+    linear-gradient(200deg, #f5f5f5, #333, #f5f5f5);
 }
 ul li:hover:nth-child(2) a:after {
-  background: linear-gradient(#db4437, transparent),
-    linear-gradient(200deg, #db4437, #4285f4, #4285f4);
+  background: linear-gradient(#333, transparent),
+    linear-gradient(200deg, #f5f5f5, #333, #f5f5f5);
 }
 ul li:hover:nth-child(3) a {
   background: linear-gradient(#007ab8, transparent),
