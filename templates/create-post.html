@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %}Create - Get Ur Website{% endblock %} 
+{% block content %}
+<div class="container" id="container">
+<h1 id="h1" class="mb-4">Create Post</h1>
+<input type="file" multiple >
+<label class="form">Title</label>
+<input type="text" id="title" class="form form-control">
+<label class="form">Subtitle</label>
+<input type="text" id="subtitle" class="form form-control">
+<label class="form">Link</label>
+<input type="text" id="link" class="form form-control">
+<label class="form">Description</label>
+<textarea id="description" class="form form-control"></textarea>
+<button type="button" id="btn" class="btn btn-outline-primary mt-4">Save</button>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var files = []
+        FilePond.registerPlugin(FilePondPluginFileValidateSize);
+        FilePond.registerPlugin(FilePondPluginFileValidateType);
+        FilePond.setOptions({
+            allowMultiple:true,
+            maxFiles:20,
+            maxFileSize: '3MB'
+        })
+        const inputElement = document.querySelector('input[type="file"]');
+        const pond = FilePond.create( inputElement, {
+            acceptedFileTypes:['image/png', 'image/jpeg'],
+            onaddfile: (err, fileItem) => {
+                if (!err) {
+                files.push(fileItem.file)
+                }
+                console.log(files)
+            },
+            onremovefile: (err, fileItem) => {
+                const index = files.indexOf(fileItem.file)
+                if (index > -1) {
+                    files.splice(index, 1)
+                }
+                console.log(files)
+            }
+        } );
+
+        var formData = new FormData();
+        $(document).on('click', '#btn', function(e) {
+            formData.append('length', files.length)
+            formData.append('title', $('#title').val())
+            formData.append('subtitle', $('#subtitle').val())
+            formData.append('link', $('#link').val())
+            formData.append('description', $('#description').val())
+            for (var i = 0; i < files.length; i++) {
+                formData.append('images' + i, files[i])
+            }
+            formData.append('csrfmiddlewaretoken', '{{ csrf_token }}')
+
+            $.ajax({
+                type: 'POST',
+                url: '{% url "create-post" %}',
+                data: formData,
+                cache: false,
+                processData: false,
+                contentType: false,
+                enctype: 'multipart/form-data',
+                success: function (){
+                    alert('The post has been created!')
+                },
+                error: function(xhr, errmsg, err) {
+                    console.log(xhr.status + ":" + xhr.responseText)
+                }
+            })
+        })
+    })
+</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% load static %} {# at the terminal, run pip install
+django-bootstrap4 #} {% load bootstrap4 %} {% block title %}Login - Get Ur
+Website{% endblock %} {% block content %}
+<div class="container" id="container">
+  <h1 id="h1">Login</h1>
+  <form method="POST" class="form">
+    {% csrf_token %} {% bootstrap_form form %} {% buttons %}
+    <button type="submit" id="btn" class="btn btn-primary">Login</button>
+    {% endbuttons %}
+  </form>
+</div>
+{% endblock %}

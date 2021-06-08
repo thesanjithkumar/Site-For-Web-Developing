@@ -1,0 +1,291 @@
+/* Social media */
+.ul {
+  margin-bottom: 250px;
+  margin-top: 100px;
+}
+ul {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+ul li .fab {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: 0.5s;
+}
+ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transition: 0.5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: -11px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: 0.5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover .fab {
+  color: #fff;
+}
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover:nth-child(1) a {
+  background: linear-gradient(#400080, transparent),
+    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+ul li:hover:nth-child(1) a:before {
+  background: linear-gradient(#400080, transparent),
+    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+ul li:hover:nth-child(1) a:after {
+  background: linear-gradient(#400080, transparent),
+    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+ul li:hover:nth-child(2) a {
+  background: linear-gradient(#db4437, transparent),
+    linear-gradient(200deg, #db4437, #4285f4, #db4437);
+}
+ul li:hover:nth-child(2) a:before {
+  background: linear-gradient(#db4437, transparent),
+    linear-gradient(200deg, #db4437, #4285f4, #db4437);
+}
+ul li:hover:nth-child(2) a:after {
+  background: linear-gradient(#db4437, transparent),
+    linear-gradient(200deg, #db4437, #4285f4, #4285f4);
+}
+ul li:hover:nth-child(3) a {
+  background: linear-gradient(#007ab8, transparent),
+    linear-gradient(200deg, #0077b5, #00a0dc, #0077b5);
+}
+ul li:hover:nth-child(3) a:before {
+  background: linear-gradient(#007ab8, transparent),
+    linear-gradient(200deg, #0077b5, #00a0dc, #0077b5);
+}
+ul li:hover:nth-child(3) a:after {
+  background: linear-gradient(#007ab8, transparent),
+    linear-gradient(200deg, #0077b5, #00a0dc, #0077b5);
+}
+ul li:hover:nth-child(4) a {
+  background: linear-gradient(#61a1d2, transparent),
+    linear-gradient(200deg, #006da3, #005f8f, #006da3);
+}
+
+ul li:hover:nth-child(4) a:before {
+  background: linear-gradient(#61a1d2, transparent),
+    linear-gradient(200deg, #006da3, #005f8f, #006da3);
+}
+ul li:hover:nth-child(4) a:after {
+  background: linear-gradient(#61a1d2, transparent),
+    linear-gradient(200deg, #006da3, #005f8f, #006da3);
+}
+ul li:hover:nth-child(5) a {
+  background: linear-gradient(#075e54, transparent),
+    linear-gradient(200deg, #25d366, #075e54, #25d366);
+}
+
+ul li:hover:nth-child(5) a:before {
+  background: linear-gradient(#075e54, transparent),
+    linear-gradient(200deg, #25d366, #075e54, #25d366);
+}
+ul li:hover:nth-child(5) a:after {
+  background: linear-gradient(#075e54, transparent),
+    linear-gradient(200deg, #25d366, #075e54, #25d366);
+}
+/* social media */
+.div_heading {
+  font-size: 1.8em;
+  display: inline;
+}
+#h1 {
+  font-family: "Lobster", cursive;
+}
+/* .form {
+  font-family: "Oswald", sans-serif;
+} */
+nav {
+  background-color: #560bad;
+  font-size: 1.2em;
+}
+.nav-link {
+  font-family: "Roboto Slab", serif;
+}
+.carousel-caption {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.card-title {
+  font-family: "Staatliches", cursive;
+}
+.card-text {
+  font-size: 1.2em;
+  font-family: "IBM Plex Serif", serif;
+}
+#btn {
+  font-size: 1.4em;
+  width: 90px;
+}
+.div_image {
+  width: auto;
+  height: 100%;
+}
+#title {
+  /* font-family: "Bree Serif", serif;
+  font-size: 2.5em; */
+}
+#p {
+  font-family: "Play", sans-serif;
+  font-size: 1.3em;
+}
+.image {
+  margin-top: 50px;
+}
+nav i {
+  color: white;
+}
+#btn {
+  font-family: "Righteous", cursive;
+  letter-spacing: 1px;
+}
+.card {
+  margin-bottom: 20px;
+}
+#log {
+  color: #560bad;
+  background-color: whitesmoke;
+  font-size: 1em;
+}
+.container {
+  margin-bottom: 100px;
+}
+#container {
+  margin-top: 40px;
+}
+.about_p {
+  font-family: "Play", sans-serif;
+  font-size: 1.3em;
+}
+footer a {
+  text-decoration: none;
+}
+footer {
+  background-color: #560bad;
+  font-family: "Roboto Slab", serif;
+}
+@media screen and (max-width: 800px) {
+  .div_logo {
+    display: none;
+  }
+  .image {
+    margin-bottom: 40px;
+  }
+  .div_heading {
+    font-size: 2.5em;
+  }
+  ul {
+    display: inline-table;
+  }
+  .image {
+    margin-bottom: 40px;
+  }
+  .div_logo {
+    margin-left: 100px;
+    height: 180px;
+    width: auto;
+  }
+  .ul {
+    margin-bottom: 700px;
+    margin-top: 350px;
+  }
+  #li {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .div_image {
+    display: none;
+  }
+  .div_logo {
+    margin-left: 100px;
+    height: 180px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .div_image {
+    margin-left: 200px;
+  }
+  .div_heading {
+    font-size: 2.2em;
+  }
+  .image {
+    margin-bottom: 40px;
+  }
+  .div_logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .div_image {
+    margin-left: 400px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .div_image {
+    margin-left: 550px;
+  }
+  .div_heading {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .about_p {
+    margin-bottom: 400px;
+    font-size: 1.9em;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .about_p {
+    margin-bottom: 500px;
+    font-size: 2em;
+  }
+}

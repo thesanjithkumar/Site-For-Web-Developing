@@ -1,0 +1,34 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title %}List - Get Ur Website{% endblock %} 
+{% block content %}
+<div class="container">
+  <div id="container">
+    <h1 id="h1" class="mb-4">Websites List</h1>
+    <div class="row">
+      {% for post in posts %}
+      <div class="col-sm-6 mb-4">
+        <div class="card w-100 border-dark">
+          <div class="view overlay">
+            <img class="card-img-top" src="{{post.image.url}}" alt="" />
+            <a href="#!">
+              <!-- <div class="mask rgba-white-slight"></div> -->
+            </a>
+          </div>
+          <div class="card-body h-100">
+            <h4 class="card-title">{{post.title}}</h4>
+            <p class="card-text">{{post.subtitle|truncatechars:35}}</p>
+            <a
+              href="{% url 'detail' post.id %}"
+              id="btn"
+              class="btn btn-outline-success btn-md"
+              >View</a
+            >
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

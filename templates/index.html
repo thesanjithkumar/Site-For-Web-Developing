@@ -1,0 +1,161 @@
+{% extends 'base.html' %} {% load static %} 
+{% block title %}Get Ur Website{% endblock %} {% block content %}
+<div class="container" id="container">
+  <div class="image">
+    <h1 class="div_heading" id="h1">Get Your Website Today!</h1>
+    <img
+      class="div_image"
+      src="{% static 'img/div_transparent.png' %}"
+      alt=""
+    />
+    <img
+      class="div_logo"
+      id="div_logo"
+      src="{% static 'img/logos_black_transparent.png' %}"
+      alt=""
+    />
+  </div>
+
+  <div
+    id="carouselExampleCaptions"
+    class="carousel carousel-dark slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img
+          src="{% static 'img/userfriendly.jpg' %}"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <h5>User Friendly UI</h5>
+          <p>Simple and User friendly User Interface.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img
+          src="{% static 'img/responsive.png' %}"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <h5>Get Fully Responsive Websistes</h5>
+          <p>Websites are made responsive using Bootstrap.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img
+          src="{% static 'img/secure.jpg' %}"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <h5>Get a free SSl Certificate with Website</h5>
+          <p>Your website traffic will be scured with SSL Certificate.</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div id="cards" class="card-group row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card border-dark mt-5 w-100 h-100">
+        <img
+          src="{% static 'img/django_card.png' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title" id="card-title">Why Django?</h4>
+          <p class="card-text">
+            A python framework designed to help developers take applications
+            from concept to completion as quickly as possible.Some of the
+            busiest sites on the Web leverage Django’s ability to quickly and
+            flexibly scale.Some of the busiest sites on the Web leverage
+            Django’s ability to quickly and flexibly scale.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-dark mt-5 w-100 h-100">
+        <img
+          src="{% static 'img/bootstrap_card.png' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Why Bootstrap?</h4>
+          <p class="card-text">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-dark mt-5 w-100 h-100">
+        <img
+          src="{% static 'img/ssl_card_final.png' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Why SSL?</h4>
+          <p class="card-text">
+            Secure Sockets Layer (SSL), is a cryptographic protocol designed to
+            provide communications security over a computer network. Several
+            versions of the protocol are widely used in applications such as
+            email, instant messaging, and voice over IP, but its use as the
+            Security layer in HTTPS remains the most publicly visible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style></style>
+{%endblock%}
