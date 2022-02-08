@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from posts import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('7204/admin/', admin.site.urls),
     path('', views.index, name='index'),
     path("contact/", views.contact, name='contact'),
     path("about/", views.about, name='about'),

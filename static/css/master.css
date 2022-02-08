@@ -82,16 +82,16 @@ ul li:hover:nth-child(1) a:after {
     linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
 }
 ul li:hover:nth-child(2) a {
-  background: linear-gradient(#db4437, transparent),
-    linear-gradient(200deg, #db4437, #4285f4, #db4437);
+  background: linear-gradient(#333, transparent),
+    linear-gradient(200deg, #f5f5f5, #333, #f5f5f5);
 }
 ul li:hover:nth-child(2) a:before {
-  background: linear-gradient(#db4437, transparent),
-    linear-gradient(200deg, #db4437, #4285f4, #db4437);
+  background: linear-gradient(#333, transparent),
+    linear-gradient(200deg, #f5f5f5, #333, #f5f5f5);
 }
 ul li:hover:nth-child(2) a:after {
-  background: linear-gradient(#db4437, transparent),
-    linear-gradient(200deg, #db4437, #4285f4, #4285f4);
+  background: linear-gradient(#333, transparent),
+    linear-gradient(200deg, #f5f5f5, #333, #f5f5f5);
 }
 ul li:hover:nth-child(3) a {
   background: linear-gradient(#007ab8, transparent),
@@ -194,7 +194,7 @@ nav i {
   background-color: whitesmoke;
   font-size: 1em;
 }
-.container {
+#container {
   margin-bottom: 100px;
 }
 #container {
@@ -264,10 +264,31 @@ footer {
   .div_logo {
     display: none;
   }
+  #ul{
+      margin-top:350px;
+      margin-bottom:750px;
+  }
+  #about{
+      /*margin-top:350px;*/
+      margin-bottom:510px;
+  }
+  .about_p{
+      margin-top:80px;
+      margin-bottom:435px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .div_image {
     margin-left: 400px;
+  }
+    #about{
+      /*margin-top:350px;*/
+      margin-bottom:250px;
+  }
+  .about_p{
+      margin-top:50px;
+      /*margin-bottom:450px;*/
+      font-size:1.5em;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -277,16 +298,19 @@ footer {
   .div_heading {
     font-size: 34px;
   }
+  .about_p{
+      font-size:1.5em;
+  }
 }
 @media screen and (min-width: 2000px) {
   .about_p {
-    margin-bottom: 400px;
+    margin-bottom: 200px;
     font-size: 1.9em;
   }
 }
 @media screen and (min-width: 2500px) {
   .about_p {
-    margin-bottom: 500px;
+    margin-bottom: 200px;
     font-size: 2em;
   }
 }
